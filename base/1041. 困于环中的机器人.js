@@ -33,7 +33,7 @@
 var isRobotBounded = function(instructions) {
     // curr 0, 1, 2, 3 北 东 南 西
     var curr = 0 // 记录当前方向状态
-    var x = y = curr = 0
+    var x = y = 0
     for(let i of instructions) {
         if (i === 'R') 
         	curr == 3 ? curr = 0 : curr += 1
