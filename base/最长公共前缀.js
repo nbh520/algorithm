@@ -44,5 +44,7 @@ var longestCommonPrefix = function(strs) {
 console.log(longestCommonPrefix(["flower","flow","flight"]))
 console.log(longestCommonPrefix(["dog","racecar","car"]))
 
-// 执行用时	内存消耗	语言
+// 执行用时 : 88 ms, 在Longest Common Prefix的JavaScript提交中击败了93.43% 的用户
+// 内存消耗 : 35.2 MB, 在Longest Common Prefix的JavaScript提交中击败了28.95% 的用户
+// 执行用时	    内存消耗	语言
 // 112 ms	   35.1 MB	   javascript
