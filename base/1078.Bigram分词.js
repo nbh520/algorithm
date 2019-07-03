@@ -31,16 +31,14 @@ var findOcurrences = function(text, first, second) {
     let arr = text.split(' ')
     let newArr = []
     for(let i = 0; i < arr.length; i++) {
-    	if (arr[i] === first) {
-    		if (arr[i + 1] === second)
-    			newArr.push(arr[i + 2])
-    	}
+    	if (arr[i] === first && arr[i + 1] === second && arr[i + 2] != null) 
+			newArr.push(arr[i + 2])
+    	
     }
-    newArr = newArr.filter(item => item != null)
     return newArr
 };
 console.log(findOcurrences("alice is a good girl she is a good student", "a", "good"))
 console.log(findOcurrences("we will we will rock you", "we", "will"))
 
-// 执行结果:通过显示详情执行用时 :112 ms, 在所有 JavaScript 提交中击败了 8.60% 的用户
+// 执行结果:通过显示详情执行用时 :72 ms, 在所有 JavaScript 提交中击败了 83.87% 的用户
 // 内存消耗:33.6 MB, 在所有 JavaScript 提交中击败了 100.00% 的用户
