@@ -45,9 +45,5 @@ var maximumGap = function (nums) {
   return value
 };
 console.log(maximumGap([3, 6, 9, 1]))
-console.log(maximumGap([10, 10]))
+// console.log(maximumGap([10, 10]))
 console.log(maximumGap([1, 3, 100]))
-
-// 执行用时： 272 ms, 在所有 JavaScript 提交中击败了12.82%的用户
-// 内存消耗：39.5 MB, 在所有 JavaScript 提交中击败了28.69%的用户
-
