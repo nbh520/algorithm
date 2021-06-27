@@ -12,11 +12,7 @@
   for (let i = 0; i < s.length; i++) {
     if (s[i] !== ' ' && /[A-Za-z0-9]+$/.test(s[i])) str+= s[i].toLocaleLowerCase()
   }
-  let bol = true
-  for (let i = 0; i < str.length; i++) {
-   if (str[i] !== str[str.length - i - 1]) bol = false
-  }
-  return bol
+  return str.split('').reverse().join('') === str
 };
 console.log(isPalindrome("A man, a plan, a canal: Panama"))
 console.log(isPalindrome("race a car"))
